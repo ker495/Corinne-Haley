@@ -1,0 +1,47 @@
+# Get_Dressed
+
+import random
+import time
+
+# answers
+ans1="How about Jeans and a Tank Top?"
+ans2="How about Capris and a Tank Top?"
+ans3="How about a Skirt and a Tank Top?"
+ans4="How about Jeans and a T-shirt?"
+ans5="How about Capris and a T-shirt?"
+ans6="How about a Skirt and a T-Shirt?"
+ans7="I can't find anything :(, sorry."
+
+print("Welcome to your closet.\n")
+
+question = input ('May I suggest something for you to wear today? \nEnter YES then press enter so I can look. ')
+
+print('Cool, I am picking something wonderful...\n')
+time.sleep(2)
+print('Looking...\n')
+time.sleep(3)
+print('Looking...\n')
+time.sleep(3)
+print('Looking...\n')
+time.sleep(3)
+print('Looking...\n')
+
+choice=random.randint(1,7)
+
+if choice==1:
+    answer=ans1
+elif choice==2:
+    answer=ans2
+elif choice==3:
+    answer=ans3
+elif choice==4:
+    answer=ans4
+elif choice==5:
+    answer=ans5
+elif choice==6:
+    answer=ans6
+else:
+    answer=ans7
+
+print(answer)
+print('\n\n Do you like this choice?  If not, press the RETURN key for another choice.\n\n')
